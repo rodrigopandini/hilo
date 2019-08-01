@@ -70,7 +70,7 @@ int OnInit() {
 
   // get indicator handles
   handleHighMA = iMA(Symbol(), Period(), InpPeriodHiLo, InpShiftHiLo, InpSmoothingMethodHiLo, PRICE_HIGH);
-  handleLowMA = iMA(Symbol(), Period(), InpPeriodHiLo, InpWidthHiLo, InpSmoothingMethodHiLo, PRICE_LOW);
+  handleLowMA = iMA(Symbol(), Period(), InpPeriodHiLo, InpShiftHiLo, InpSmoothingMethodHiLo, PRICE_LOW);
 
   return(INIT_SUCCEEDED);
 }
